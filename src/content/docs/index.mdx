@@ -1,0 +1,39 @@
+---
+title: Lume
+description: Embeddable AI assistant bubble for any React app. Self-hostable with Ollama.
+template: splash
+hero:
+  tagline: An AI assistant widget for any React app. Runs entirely on your machine with Ollama — no cloud, no API keys, no data leaving your infrastructure.
+  actions:
+    - text: Get started
+      link: /getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/ovt2/lume
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid, Card } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <Card title="Self-hostable" icon="laptop">
+    Runs entirely on your machine via Ollama. No cloud dependency, no API keys, no data leaving your infrastructure.
+  </Card>
+  <Card title="Two-step classification" icon="magnifier">
+    A fast intent classifier routes each message before generating a response — dramatically more reliable than single-shot prompting.
+  </Card>
+  <Card title="Actions" icon="rocket">
+    The assistant can trigger real functions in your app with a built-in confirmation step.
+  </Card>
+  <Card title="UI Components" icon="puzzle">
+    Register your own React components and the assistant renders them inline instead of plain text.
+  </Card>
+  <Card title="LumeProvider" icon="setting">
+    Set up once at the root. Control context from anywhere with `useLume()`.
+  </Card>
+  <Card title="Debug mode" icon="information">
+    See intent classification badges on every message to diagnose routing issues in seconds.
+  </Card>
+</CardGrid>

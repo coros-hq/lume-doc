@@ -1,0 +1,9 @@
+:root {
+  --sl-color-accent-low: #3b1f7a;
+  --sl-color-accent: #7c3aed;
+  --sl-color-accent-high: #c4b5fd;
+}
+
+.hero .sl-flex {
+  gap: 0.75rem !important;
+}

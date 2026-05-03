@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import vercelAnalytics from '@vercel/analytics/astro'
 
 export default defineConfig({
   integrations: [
@@ -71,7 +70,15 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/styles/custom.css"],
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: 'https://va.vercel-scripts.com/v1/script.js',
+            defer: true,
+          },
+        },
+      ],
     }),
-    vercelAnalytics({})
   ],
 });

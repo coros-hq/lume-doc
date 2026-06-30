@@ -51,6 +51,7 @@ export default defineConfig({
             { label: "Proactive triggers", slug: "proactive-triggers" },
             { label: "Suggestion chips", slug: "suggestion-chips" },
             { label: "Debug mode", slug: "debug-mode" },
+            { label: "shadcn/ui", slug: "shadcn" },
           ],
         },
         {
